@@ -1,0 +1,14 @@
+﻿
+@model IEnumerable<Issue>
+<table>
+    <tr><th>Id</th><th>Subject</th><th>Body</th></tr>
+    @foreach (var issue in Model)
+    {
+        <tr>
+            <td>@issue.IssueId</td>
+            <td>@issue.Subject</td>
+            <td>@issue.Description</td>
+        </tr>
+    }
+</table>
+
